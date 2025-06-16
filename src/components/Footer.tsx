@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, MapPin, Phone } from 'lucide-react';
+import logo from '/images/viva-banner-images/2.png';
 
 const Footer = () => {
   return (
@@ -9,7 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: Logo and Tagline */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold text-[#d25134]">VIVAA</div>
+            <Link to="/" className="flex items-center">
+              <img src={logo} alt="VIVAA Logo" className="h-12" />
+            </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               Long-Lasting Solutions for Your Skin, Hair, & Body.
             </p>
