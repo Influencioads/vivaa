@@ -27,9 +27,9 @@ const ServicesPage = () => {
       description: 'Advanced body contouring and fat reduction treatments for lasting results using cutting-edge technology.',
       heroImage: 'https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400&fit=crop',
       services: servicesData.filter(service => service.category === 'Slimming'),
-      bgColor: 'bg-teal-50',
-      textColor: 'text-teal-600',
-      buttonColor: 'bg-teal-600 hover:bg-teal-700'
+      bgColor: 'bg-red-50',
+      textColor: 'text-[#d25134]',
+      buttonColor: 'bg-[#d25134] hover:bg-[#b8472e]'
     },
     {
       id: 'skin-treatments',
@@ -37,9 +37,9 @@ const ServicesPage = () => {
       description: 'Comprehensive skin rejuvenation and enhancement therapies for radiant, youthful skin.',
       heroImage: 'https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400&fit=crop',
       services: servicesData.filter(service => service.category === 'Skin Treatments'),
-      bgColor: 'bg-blue-50',
-      textColor: 'text-blue-600',
-      buttonColor: 'bg-blue-600 hover:bg-blue-700'
+      bgColor: 'bg-red-50',
+      textColor: 'text-[#d25134]',
+      buttonColor: 'bg-[#d25134] hover:bg-[#b8472e]'
     },
     {
       id: 'hair-treatments',
@@ -47,9 +47,9 @@ const ServicesPage = () => {
       description: 'Revolutionary hair restoration and scalp care solutions for natural, lasting results.',
       heroImage: 'https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400&fit=crop',
       services: servicesData.filter(service => service.category === 'Hair Treatments'),
-      bgColor: 'bg-purple-50',
-      textColor: 'text-purple-600',
-      buttonColor: 'bg-purple-600 hover:bg-purple-700'
+      bgColor: 'bg-red-50',
+      textColor: 'text-[#d25134]',
+      buttonColor: 'bg-[#d25134] hover:bg-[#b8472e]'
     },
     {
       id: 'laser-hair-reduction',
@@ -57,16 +57,16 @@ const ServicesPage = () => {
       description: 'Permanent hair removal solutions for all body areas using advanced laser technology.',
       heroImage: 'https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400&fit=crop',
       services: servicesData.filter(service => service.category === 'Laser Hair Reduction'),
-      bgColor: 'bg-orange-50',
-      textColor: 'text-orange-600',
-      buttonColor: 'bg-orange-600 hover:bg-orange-700'
+      bgColor: 'bg-red-50',
+      textColor: 'text-[#d25134]',
+      buttonColor: 'bg-[#d25134] hover:bg-[#b8472e]'
     }
   ];
 
   return (
     <div>
       {/* Header */}
-      <section className="py-16 bg-gradient-to-r from-teal-600 to-blue-600 text-white">
+      <section className="py-16 bg-[#d25134] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Our Advanced Aesthetic Solutions
@@ -159,7 +159,7 @@ const ServicesPage = () => {
       <WhyChooseSection />
 
       {/* Final CTA */}
-      <section className="py-16 bg-gradient-to-r from-teal-600 to-blue-600 text-white">
+      <section className="py-16 bg-[#d25134] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Begin Your Transformation?
@@ -170,7 +170,7 @@ const ServicesPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/locations#contact"
-              className="inline-flex items-center px-8 py-3 bg-white text-teal-600 font-semibold rounded-full hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-white text-[#d25134] font-semibold rounded-full hover:bg-gray-100 transition-colors"
             >
               Book Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
@@ -178,7 +178,7 @@ const ServicesPage = () => {
               href="https://wa.me/918123002386"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-teal-600 transition-colors"
+              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-[#d25134] transition-colors"
             >
               WhatsApp Us Now
             </a>

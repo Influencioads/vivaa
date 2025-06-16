@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
             name="fullName"
             value={formData.fullName}
             onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#d25134]"
             placeholder="Enter your full name"
           />
           {errors.fullName && <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>}
@@ -96,7 +96,7 @@ const ContactForm: React.FC = () => {
             name="phone"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#d25134]"
             placeholder="+91 9876543210"
           />
           {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
@@ -110,7 +110,7 @@ const ContactForm: React.FC = () => {
             name="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#d25134]"
             placeholder="your.email@example.com"
           />
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
@@ -123,7 +123,7 @@ const ContactForm: React.FC = () => {
             name="location"
             value={formData.location}
             onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#d25134]"
           >
             <option value="HSR Layout">HSR Layout</option>
             <option value="Banashankari">Banashankari</option>
@@ -137,7 +137,7 @@ const ContactForm: React.FC = () => {
             name="service"
             value={formData.service}
             onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#d25134]"
           >
             <option value="">Select a service</option>
             <option value="prp">PRP Treatment</option>
@@ -151,7 +151,7 @@ const ContactForm: React.FC = () => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full px-4 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white font-semibold rounded-lg hover:from-teal-600 hover:to-blue-600 transition-all duration-300 flex items-center justify-center"
+        className="w-full px-4 py-3 bg-[#d25134] text-white font-semibold rounded-lg hover:bg-[#b8472e] transition-all duration-300 flex items-center justify-center"
       >
         {isSubmitting ? (
           <>

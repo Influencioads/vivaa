@@ -8,7 +8,7 @@ const LocationsPage = () => {
       address: '2ND FLOOR, 556, 14th Main Rd, above Karma Ayurveda Clinic, Sector 3, HSR Layout, Bengaluru, Karnataka 560102',
       phone: '81230 02386',
       mapUrl: 'https://www.google.com/maps/place/Vivaa+Wellness+Center+%7C+Skin+%26+Laser+Hair+Removal+In+HSR+Layout/@12.9088629,77.6355849,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e150e28e0f:0x1f7521b12ac243c1!8m2!3d12.9088629!4d77.6381598!16s%2Fg%2F11swlck3ky?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D',
-      color: 'teal',
+      color: '[#d25134]',
       mainImage: '/images/viva-banner-images/viva-skin/Peels.webp'
     },
     {
@@ -16,7 +16,7 @@ const LocationsPage = () => {
       address: '572, 3rd Floor, 30th Main Rd, 7 Block, CG Chinnappa Naidu Layout, Banashankari 3rd Stage, Banashankari, Bengaluru, Karnataka 560085',
       phone: '81230 02386',
       mapUrl: 'https://www.google.com/maps?q=Banashankari+VIVAA+Clinic',
-      color: 'blue',
+      color: '[#d25134]',
       mainImage: '/images/viva-banner-images/stem-viva-treatment-hair/Micro Scalp Pigmentation.webp'
     }
   ];
@@ -24,7 +24,7 @@ const LocationsPage = () => {
   return (
     <div>
       {/* Header */}
-      <section className="py-16 bg-gradient-to-r from-teal-600 to-blue-600 text-white">
+      <section className="py-16 bg-[#d25134] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
             <div className="p-4 bg-white/20 rounded-full">
@@ -66,7 +66,7 @@ const LocationsPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {locations.map((location, index) => (
-              <div key={index} className="bg-teal-100 p-8 rounded-xl">
+              <div key={index} className="bg-red-100 p-8 rounded-xl">
                 <div className="mb-6">
                   <img 
                     src={location.mainImage}
@@ -76,15 +76,15 @@ const LocationsPage = () => {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">{location.name}</h3>
                 <div className="flex items-start space-x-3 mb-6">
-                  <MapPin className="h-5 w-5 text-teal-600 mt-1 flex-shrink-0" />
+                  <MapPin className="h-5 w-5 text-[#d25134] mt-1 flex-shrink-0" />
                   <p className="text-gray-700">{location.address}</p>
                 </div>
                 <div className="flex items-center space-x-3 mb-6">
-                  <Phone className="h-5 w-5 text-teal-600" />
+                  <Phone className="h-5 w-5 text-[#d25134]" />
                   <span className="text-gray-700">{location.phone}</span>
                 </div>
                 <div className="flex items-center space-x-3 mb-6">
-                  <Clock className="h-5 w-5 text-teal-600" />
+                  <Clock className="h-5 w-5 text-[#d25134]" />
                   <span className="text-gray-700">Mon-Sat: 9AM-8PM, Sun: 10AM-6PM</span>
                 </div>
 
@@ -93,7 +93,7 @@ const LocationsPage = () => {
                   href={location.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-full bg-teal-600 text-white py-3 px-6 rounded-md hover:bg-teal-700 transition-colors"
+                  className="inline-flex items-center justify-center w-full bg-[#d25134] text-white py-3 px-6 rounded-md hover:bg-[#b8472e] transition-colors"
                 >
                   <MapPin className="mr-2 h-5 w-5" />
                   Get Directions
@@ -109,8 +109,8 @@ const LocationsPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <div className="p-4 bg-teal-100 rounded-full">
-                <Mail className="h-12 w-12 text-teal-600" />
+              <div className="p-4 bg-red-100 rounded-full">
+                <Mail className="h-12 w-12 text-[#d25134]" />
               </div>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">

@@ -26,8 +26,8 @@ const CoursesPage = () => {
         'Spa Therapist',
         'Beauty Consultant'
       ],
-      icon: <Users className="h-8 w-8 text-pink-600" />,
-      color: 'pink'
+      icon: <Users className="h-8 w-8 text-[#d25134]" />,
+      color: '[#d25134]'
     },
     {
       title: 'Aesthetician Course',
@@ -52,15 +52,15 @@ const CoursesPage = () => {
         'Anti-Aging Consultant',
         'Medical Spa Manager'
       ],
-      icon: <Award className="h-8 w-8 text-blue-600" />,
-      color: 'blue'
+      icon: <Award className="h-8 w-8 text-[#d25134]" />,
+      color: '[#d25134]'
     }
   ];
 
   return (
     <div>
       {/* Header */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+      <section className="py-16 bg-[#d25134] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
             <div className="p-4 bg-white/20 rounded-full">
@@ -82,16 +82,16 @@ const CoursesPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
             {courses.map((course, index) => (
-              <div key={index} className={`bg-${course.color}-50 rounded-2xl p-8 md:p-12`}>
+              <div key={index} className="bg-red-50 rounded-2xl p-8 md:p-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                   {/* Course Info */}
                   <div>
                     <div className="flex items-center mb-6">
-                      <div className={`p-3 bg-${course.color}-100 rounded-full mr-4`}>
+                      <div className="p-3 bg-red-100 rounded-full mr-4">
                         {course.icon}
                       </div>
                       <div>
-                        <h2 className={`text-3xl font-bold text-${course.color}-900`}>
+                        <h2 className="text-3xl font-bold text-gray-900">
                           {course.title}
                         </h2>
                         <div className="flex items-center space-x-4 mt-2 text-sm text-gray-600">
@@ -119,7 +119,7 @@ const CoursesPage = () => {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {course.career_opportunities.map((career, careerIndex) => (
                           <div key={careerIndex} className="flex items-center">
-                            <div className={`w-2 h-2 bg-${course.color}-500 rounded-full mr-3`}></div>
+                            <div className="w-2 h-2 bg-[#d25134] rounded-full mr-3"></div>
                             <span className="text-gray-700">{career}</span>
                           </div>
                         ))}
@@ -136,8 +136,8 @@ const CoursesPage = () => {
                       <div className="space-y-4">
                         {course.curriculum.map((item, itemIndex) => (
                           <div key={itemIndex} className="flex items-start">
-                            <div className={`w-6 h-6 bg-${course.color}-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0`}>
-                              <span className={`text-${course.color}-600 text-sm font-semibold`}>
+                            <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                              <span className="text-[#d25134] text-sm font-semibold">
                                 {itemIndex + 1}
                               </span>
                             </div>

@@ -4,22 +4,22 @@ import { Leaf, Shield, Zap, Heart } from 'lucide-react';
 const WhyChooseSection = () => {
   const reasons = [
     {
-      icon: <Leaf className="h-8 w-8 text-teal-600" />,
+      icon: <Leaf className="h-8 w-8 text-[#d25134]" />,
       title: "Holistic Healing",
       description: "We treat the root cause of your concerns, not just the symptoms, ensuring long-lasting and effective results."
     },
     {
-      icon: <Shield className="h-8 w-8 text-teal-600" />,
+      icon: <Shield className="h-8 w-8 text-[#d25134]" />,
       title: "Medical Standards",
       description: "All treatments adhere to the strictest medical standards for your safety and confidence, delivered by qualified professionals."
     },
     {
-      icon: <Zap className="h-8 w-8 text-teal-600" />,
+      icon: <Zap className="h-8 w-8 text-[#d25134]" />,
       title: "State-of-the-Art Technology",
       description: "We invest in the latest, clinically-proven technology to provide superior and efficient outcomes."
     },
     {
-      icon: <Heart className="h-8 w-8 text-teal-600" />,
+      icon: <Heart className="h-8 w-8 text-[#d25134]" />,
       title: "Personalized Care",
       description: "Your journey is unique. We create bespoke treatment plans tailored specifically to your individual needs and goals."
     }
@@ -36,7 +36,7 @@ const WhyChooseSection = () => {
           {reasons.map((reason, index) => (
             <div key={index} className="text-center group">
               <div className="flex justify-center mb-4">
-                <div className="p-3 bg-teal-100 rounded-full group-hover:bg-teal-200 transition-colors">
+                <div className="p-3 bg-red-100 rounded-full group-hover:bg-red-200 transition-colors">
                   {reason.icon}
                 </div>
               </div>

@@ -67,13 +67,13 @@ const HeroSlider = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
                 <button
                   onClick={openPopup}
-                  className="inline-flex items-center px-8 py-3 bg-teal-600 text-white font-semibold rounded-full hover:bg-teal-700 transition-all duration-300 transform hover:scale-105"
+                  className="inline-flex items-center px-8 py-3 bg-[#d25134] text-white font-semibold rounded-full hover:bg-[#b8472e] transition-all duration-300 transform hover:scale-105"
                 >
                   {slide.cta} <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
                 <a 
                   href="/locations#contact"
-                  className="inline-flex items-center px-8 py-3 bg-yellow-500 text-white font-semibold rounded-full hover:bg-yellow-600 transition-all duration-300 transform hover:scale-105"
+                  className="inline-flex items-center px-8 py-3 bg-white text-[#d25134] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
                 >
                   Book Free Consultation
                 </a>

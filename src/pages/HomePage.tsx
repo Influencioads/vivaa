@@ -60,10 +60,10 @@ const HomePage = () => {
   ];
 
   const stats = [
-    { number: '5000+', label: 'Happy Clients', icon: <Users className="h-8 w-8 text-teal-600" /> },
-    { number: '15+', label: 'Years Experience', icon: <Award className="h-8 w-8 text-teal-600" /> },
-    { number: '32+', label: 'Advanced Treatments', icon: <Star className="h-8 w-8 text-teal-600" /> },
-    { number: '2', label: 'Premium Locations', icon: <MapPin className="h-8 w-8 text-teal-600" /> }
+    { number: '5000+', label: 'Happy Clients', icon: <Users className="h-8 w-8 text-[#d25134]" /> },
+    { number: '15+', label: 'Years Experience', icon: <Award className="h-8 w-8 text-[#d25134]" /> },
+    { number: '32+', label: 'Advanced Treatments', icon: <Star className="h-8 w-8 text-[#d25134]" /> },
+    { number: '2', label: 'Premium Locations', icon: <MapPin className="h-8 w-8 text-[#d25134]" /> }
   ];
 
   return (
@@ -78,7 +78,7 @@ const HomePage = () => {
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-teal-100 rounded-full">
+                  <div className="p-3 bg-red-100 rounded-full">
                     {stat.icon}
                   </div>
                 </div>
@@ -91,7 +91,7 @@ const HomePage = () => {
       </section>
 
       {/* About Us Snippet */}
-      <section className="py-16 bg-gradient-to-r from-teal-50 to-blue-50">
+      <section className="py-16 bg-gradient-to-r from-red-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -104,13 +104,13 @@ const HomePage = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
                   to="/services"
-                  className="inline-flex items-center px-6 py-3 bg-teal-600 text-white font-semibold rounded-full hover:bg-teal-700 transition-colors"
+                  className="inline-flex items-center px-6 py-3 bg-[#d25134] text-white font-semibold rounded-full hover:bg-[#b8472e] transition-colors"
                 >
                   Discover Our Services <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link 
                   to="/locations#contact"
-                  className="inline-flex items-center px-6 py-3 border-2 border-teal-600 text-teal-600 font-semibold rounded-full hover:bg-teal-600 hover:text-white transition-colors"
+                  className="inline-flex items-center px-6 py-3 border-2 border-[#d25134] text-[#d25134] font-semibold rounded-full hover:bg-[#d25134] hover:text-white transition-colors"
                 >
                   Book Free Consultation
                 </Link>
@@ -169,11 +169,11 @@ const HomePage = () => {
                   <div className="absolute top-4 right-4 text-3xl">{service.icon}</div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-teal-600 transition-colors mb-2">
+                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#d25134] transition-colors mb-2">
                     {service.name}
                   </h3>
                   <p className="text-gray-600 text-sm">{service.description}</p>
-                  <div className="mt-4 flex items-center text-teal-600 font-medium">
+                  <div className="mt-4 flex items-center text-[#d25134] font-medium">
                     Learn More <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -230,7 +230,7 @@ const HomePage = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* HSR Layout */}
-            <div className="bg-teal-100 p-8 rounded-xl">
+            <div className="bg-red-100 p-8 rounded-xl">
               <div className="mb-6">
                 <img 
                   src="/images/viva-banner-images/viva-skin/Peels.webp"
@@ -240,23 +240,23 @@ const HomePage = () => {
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">HSR Layout</h3>
               <div className="flex items-start space-x-3 mb-6">
-                <MapPin className="h-5 w-5 text-teal-600 mt-1 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-[#d25134] mt-1 flex-shrink-0" />
                 <p className="text-gray-700">
                   2ND FLOOR, 556, 14th Main Rd, above Karma Ayurveda Clinic, 
                   Sector 3, HSR Layout, Bengaluru, Karnataka 560102
                 </p>
               </div>
               <div className="flex items-center space-x-3 mb-6">
-                <Phone className="h-5 w-5 text-teal-600" />
+                <Phone className="h-5 w-5 text-[#d25134]" />
                 <span className="text-gray-700">81230 02386</span>
               </div>
               <div className="flex items-center space-x-3 mb-6">
-                <Clock className="h-5 w-5 text-teal-600" />
+                <Clock className="h-5 w-5 text-[#d25134]" />
                 <span className="text-gray-700">Mon-Sat: 9AM-8PM, Sun: 10AM-6PM</span>
               </div>
               <a 
                 href="https://www.google.com/maps/place/Vivaa+Wellness+Center+%7C+Skin+%26+Laser+Hair+Removal+In+HSR+Layout/@12.9088629,77.6355849,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e150e28e0f:0x1f7521b12ac243c1!8m2!3d12.9088629!4d77.6381598!16s%2Fg%2F11swlck3ky?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" 
-                className="inline-flex items-center justify-center w-full px-4 py-2 bg-teal-600 text-white font-semibold rounded-md hover:bg-teal-700 transition-colors"
+                className="inline-flex items-center justify-center w-full px-4 py-2 bg-[#d25134] text-white font-semibold rounded-md hover:bg-[#b8472e] transition-colors"
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -266,7 +266,7 @@ const HomePage = () => {
             </div>
 
             {/* Banashankari */}
-            <div className="bg-teal-100 p-8 rounded-xl">
+            <div className="bg-red-100 p-8 rounded-xl">
               <div className="mb-6">
                 <img 
                   src="/images/viva-banner-images/stem-viva-treatment-hair/Micro Scalp Pigmentation.webp"
@@ -276,23 +276,23 @@ const HomePage = () => {
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Banashankari</h3>
               <div className="flex items-start space-x-3 mb-6">
-                <MapPin className="h-5 w-5 text-teal-600 mt-1 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-[#d25134] mt-1 flex-shrink-0" />
                 <p className="text-gray-700">
                   572, 3rd Floor, 30th Main Rd, 7 Block, CG Chinnappa Naidu Layout, 
                   Banashankari 3rd Stage, Bengaluru, Karnataka 560085
                 </p>
               </div>
               <div className="flex items-center space-x-3 mb-6">
-                <Phone className="h-5 w-5 text-teal-600" />
+                <Phone className="h-5 w-5 text-[#d25134]" />
                 <span className="text-gray-700">81230 02386</span>
               </div>
               <div className="flex items-center space-x-3 mb-6">
-                <Clock className="h-5 w-5 text-teal-600" />
+                <Clock className="h-5 w-5 text-[#d25134]" />
                 <span className="text-gray-700">Mon-Sat: 9AM-8PM, Sun: 10AM-6PM</span>
               </div>
               <a 
                 href="https://www.google.com/maps?q=Banashankari+VIVAA+Clinic" 
-                className="inline-flex items-center justify-center w-full px-4 py-2 bg-teal-600 text-white font-semibold rounded-md hover:bg-teal-700 transition-colors"
+                className="inline-flex items-center justify-center w-full px-4 py-2 bg-[#d25134] text-white font-semibold rounded-md hover:bg-[#b8472e] transition-colors"
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -305,7 +305,7 @@ const HomePage = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-teal-600 to-blue-600 text-white">
+      <section className="py-16 bg-[#d25134] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Transform Your Life?
@@ -316,13 +316,13 @@ const HomePage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/locations#contact"
-              className="inline-flex items-center px-8 py-3 bg-white text-teal-600 font-semibold rounded-full hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-white text-[#d25134] font-semibold rounded-full hover:bg-gray-100 transition-colors"
             >
               Book Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <a 
               href="tel:+918123002386"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-teal-600 transition-colors"
+              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-[#d25134] transition-colors"
             >
               <Phone className="mr-2 h-5 w-5" />
               Call Now: 81230 02386

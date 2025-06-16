@@ -14,7 +14,7 @@ const ServiceDetailPage = () => {
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Service Not Found</h1>
           <p className="text-gray-600 mb-4">The service you're looking for doesn't exist.</p>
-          <Link to="/services" className="text-teal-600 hover:text-teal-700">
+          <Link to="/services" className="text-[#d25134] hover:text-[#b8472e]">
             Return to Services
           </Link>
         </div>
@@ -29,7 +29,7 @@ const ServiceDetailPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link 
             to="/services" 
-            className="inline-flex items-center text-teal-600 hover:text-teal-700"
+            className="inline-flex items-center text-[#d25134] hover:text-[#b8472e]"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Services
@@ -38,7 +38,7 @@ const ServiceDetailPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-teal-600 to-blue-600 text-white overflow-hidden">
+      <section className="relative py-20 bg-[#d25134] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src={service.beforeAfterImages[0]}
@@ -61,7 +61,7 @@ const ServiceDetailPage = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="#booking-form"
-                  className="inline-flex items-center px-8 py-3 bg-yellow-500 text-white font-semibold rounded-full hover:bg-yellow-600 transition-colors"
+                  className="inline-flex items-center px-8 py-3 bg-white text-[#d25134] font-semibold rounded-full hover:bg-gray-100 transition-colors"
                 >
                   <Calendar className="mr-2 h-5 w-5" />
                   Book Free Consultation
@@ -70,7 +70,7 @@ const ServiceDetailPage = () => {
                   href="https://wa.me/918123002386"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-teal-600 transition-colors"
+                  className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-[#d25134] transition-colors"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   WhatsApp Us
@@ -97,28 +97,28 @@ const ServiceDetailPage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="flex justify-center mb-2">
-                <Award className="h-8 w-8 text-teal-600" />
+                <Award className="h-8 w-8 text-[#d25134]" />
               </div>
               <div className="text-2xl font-bold text-gray-900">FDA Approved</div>
               <div className="text-gray-600">Safe & Effective</div>
             </div>
             <div>
               <div className="flex justify-center mb-2">
-                <Users className="h-8 w-8 text-teal-600" />
+                <Users className="h-8 w-8 text-[#d25134]" />
               </div>
               <div className="text-2xl font-bold text-gray-900">1000+</div>
               <div className="text-gray-600">Happy Clients</div>
             </div>
             <div>
               <div className="flex justify-center mb-2">
-                <Clock className="h-8 w-8 text-teal-600" />
+                <Clock className="h-8 w-8 text-[#d25134]" />
               </div>
               <div className="text-2xl font-bold text-gray-900">{service.pricing.sessionInfo}</div>
               <div className="text-gray-600">Treatment Duration</div>
             </div>
             <div>
               <div className="flex justify-center mb-2">
-                <Star className="h-8 w-8 text-teal-600" />
+                <Star className="h-8 w-8 text-[#d25134]" />
               </div>
               <div className="text-2xl font-bold text-gray-900">4.9/5</div>
               <div className="text-gray-600">Client Rating</div>
@@ -171,7 +171,7 @@ const ServiceDetailPage = () => {
                 <div className="space-y-6">
                   {service.processSteps.map((step, index) => (
                     <div key={index} className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold">
+                      <div className="flex-shrink-0 w-10 h-10 bg-[#d25134] text-white rounded-full flex items-center justify-center font-bold">
                         {step.step}
                       </div>
                       <div>
@@ -191,7 +191,7 @@ const ServiceDetailPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {service.benefits.map((benefit, index) => (
                     <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 text-teal-600 mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-[#d25134] mt-1 flex-shrink-0" />
                       <span className="text-gray-700">{benefit}</span>
                     </div>
                   ))}
@@ -249,12 +249,12 @@ const ServiceDetailPage = () => {
             <div className="lg:col-span-1">
               <div className="sticky top-8 space-y-8">
                 {/* Pricing Card */}
-                <div className="bg-gradient-to-br from-teal-50 to-blue-50 p-6 rounded-xl border">
+                <div className="bg-gradient-to-br from-red-50 to-orange-50 p-6 rounded-xl border">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Treatment Pricing</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Starting Price:</span>
-                      <span className="font-semibold text-teal-600">{service.pricing.startingPrice}</span>
+                      <span className="font-semibold text-[#d25134]">{service.pricing.startingPrice}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Sessions:</span>
@@ -282,7 +282,7 @@ const ServiceDetailPage = () => {
                   <div className="space-y-3">
                     <a 
                       href="tel:+918123002386"
-                      className="flex items-center justify-center w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+                      className="flex items-center justify-center w-full bg-[#d25134] text-white py-3 px-4 rounded-lg hover:bg-[#b8472e] transition-colors"
                     >
                       <Phone className="mr-2 h-5 w-5" />
                       Call: 81230 02386
@@ -329,7 +329,7 @@ const ServiceDetailPage = () => {
       <WhyChooseSection />
 
       {/* Final CTA */}
-      <section className="py-16 bg-gradient-to-r from-teal-600 to-blue-600 text-white">
+      <section className="py-16 bg-[#d25134] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your {service.name} Journey?
@@ -340,14 +340,14 @@ const ServiceDetailPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#booking-form"
-              className="inline-flex items-center px-8 py-3 bg-white text-teal-600 font-semibold rounded-full hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-white text-[#d25134] font-semibold rounded-full hover:bg-gray-100 transition-colors"
             >
               <Calendar className="mr-2 h-5 w-5" />
               Book Free Consultation
             </a>
             <a 
               href="tel:+918123002386"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-teal-600 transition-colors"
+              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-[#d25134] transition-colors"
             >
               <Phone className="mr-2 h-5 w-5" />
               Call Now: 81230 02386
